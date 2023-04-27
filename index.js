@@ -12,10 +12,10 @@ function encriptar() {
      .replace(/u/gi, "ufat");
 
     if (texto.length != 0) {
-        document.getElementById("texto").value = textoCifrado;
-        //tituloMensaje.textContent = "texto encriptado con exito";//
-        parrafo.textContent = textoCifrado;
-        //muñeco.src = "./img/encriptado.jpg";//
+        document.getElementById("texto2").value = textoCifrado;
+        tituloMensaje.textContent = "texto encriptado con exito";
+        parrafo.textContent = "";
+        muñeco.src = "./img/encriptado.jpg";
     } 
     else {
         muñeco.src = "./img/muñeco.png";
@@ -39,10 +39,10 @@ function desencriptar() {
      .replace(/ufat/gi, "u");
 
     if (texto.length != 0) {
-        document.getElementById("texto").value = textoCifrado;
-        //tituloMensaje.textContent = "texto desencriptado con exito";//
-        parrafo.textContent = textoCifrado;
-        //muñeco.src = "./img/desencriptado.jpg";//
+        document.getElementById("texto2").value = textoCifrado;
+        tituloMensaje.textContent = "texto desencriptado con exito";
+        parrafo.textContent = "";
+        muñeco.src = "./img/desencriptado.jpg";
     } 
     else {
         muñeco.src = "./img/muñeco.png";
@@ -53,7 +53,7 @@ function desencriptar() {
 }
 
 function copiar() {
-    let texto = document.querySelector("#texto");
+    let texto = document.querySelector("#texto2");
     texto.select();
     document.execCommand("copy");
 }
