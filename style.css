@@ -257,7 +257,7 @@ header{
 
     .terminos{
         left: 3%;
-        top: 85%;
+        top: 82%;
     }
 
     .terminos p{
@@ -266,15 +266,16 @@ header{
     }
 
     .botones {
+        width: auto;
         display: flex;
         flex-direction: row;
         align-items:center;
         justify-content: center;
-        left: 0.5%;
+        left: 2.5%;
         padding: 5px 0;
         position: absolute;
         width: 100%;
-        top: 88%;
+        top: 85%;
     }
 
     .btn-encriptar{
@@ -300,11 +301,12 @@ header{
         width: auto;
         background: #d8dfe8;
         height: 20%;
-        left: 1%;
-        top:98%;
+        left: 2.5%;
+        top:99%;
     }
 
     .texto2{
+        width: auto;
         top: 5%;
         background: #d8dfe8;
     }
@@ -316,6 +318,7 @@ header{
     }
 
     .mensaje-encriptado{
+        width: auto;
         top: 15%;
     }
     .mensaje-encriptado h2{
