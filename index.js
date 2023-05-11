@@ -4,6 +4,7 @@ function encriptar() {
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
 
+
     let textoCifrado = texto
      .replace(/e/gi, "enter")
      .replace(/i/gi, "imes")
@@ -12,10 +13,12 @@ function encriptar() {
      .replace(/u/gi, "ufat");
 
     if (texto.length != 0) {
+        document.getElementById("texto").value = textoCifrado;
         document.getElementById("texto2").value = textoCifrado;
+        document.getElementById("mostrar").style.display = "block";
         tituloMensaje.textContent = "texto encriptado con exito";
         parrafo.textContent = "";
-        muñeco.src = "./img/encriptado.jpg";
+        muñeco.src = document.getElementById("muñeco").style.display = "none";
     } 
     else {
         muñeco.src = "./img/muñeco.png";
@@ -39,10 +42,12 @@ function desencriptar() {
      .replace(/ufat/gi, "u");
 
     if (texto.length != 0) {
+        document.getElementById("texto").value = textoCifrado;
         document.getElementById("texto2").value = textoCifrado;
+        document.getElementById("mostrar").style.display = "block";
         tituloMensaje.textContent = "texto desencriptado con exito";
         parrafo.textContent = "";
-        muñeco.src = "./img/desencriptado.jpg";
+        muñeco.src = document.getElementById("muñeco").style.display = "none";
     } 
     else {
         muñeco.src = "./img/muñeco.png";
@@ -57,3 +62,8 @@ function copiar() {
     texto.select();
     document.execCommand("copy");
 }
+
+
+
+
+
